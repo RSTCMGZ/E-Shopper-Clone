@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cart | E-Shopper</title>
+    <title>Home | E-Shopper</title>
     <!--! BOOTSTRAP ICON LINKS -->
     <link
       rel="stylesheet"
@@ -146,12 +146,12 @@
                 >
               </li>
               <li class="nav-item ">
-                <a href="#" class="nav-link">
+                <a href="cart.html" class="nav-link">
                   <i class="bi bi-cart-fill mx-1"></i></i>Cart</a
                 >
               </li>
               <li class="nav-item ">
-                <a href="cart.html" class="nav-link">
+                <a href="login.html" class="nav-link">
                   <i class="bi bi-lock-fill mx-1"></i></i>Login</a
                 >
               </li>
@@ -176,8 +176,8 @@
                     <li><a class=" text-white" href="#">Product</a></li>
                     <li><a class=" text-white" href="#">Product Details</a></li>
                     <li><a class=" text-white" href="#">Checkout</a></li>
-                    <li><a class=" text-white" href="cart.html">Cart</a></li>
-                    <li><a class=" text-white" href="login.html">Login</a></li>
+                    <li><a class=" text-white" href="#">Cart</a></li>
+                    <li><a class=" text-white" href="#">Login</a></li>
                   </ul>
                 </li>
                 <li class="nav-item dropdown ">
@@ -207,14 +207,107 @@
       </div>
     </header>
     <!--! header end -->
-    <!--! cart items start -->
     <section class="cart">
         <div class="container-lg px-5">
             <div class="breadcrumbs">
                 <ol class="breadcrumb mt-5 ">
                     <li><a href="#">Home</a></li>
-                    <li class="active mx-3">Shopping Cart</li>
+                    <li class="active mx-3">Check out </li>
                 </ol>
+            </div>
+            <div class="checkout">
+                <h2 class="heading">Step1</h2>
+            </div>
+            <div class="checkout-options">
+                <h3>New User</h3>
+                <p>Checkout options</p>
+                <ul class="nav">
+                    <li><label>
+                        <input type="checkbox">Register Account
+                    </label></li>
+                    <li><label>
+                        <input type="checkbox">Guest Checkout 
+                    </label></li>
+                    <li>
+                        <a href="#">
+                            <i class="bi bi-x-lg"></i>Cancel
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="register">
+                <p>Please use Register And Checkout to easily get access to your order history, or use Checkout as Guest</p>
+            </div>
+            <div class="shopper-info">
+                <div class="row mt-4">
+                    <div class="col-sm-3">
+                        <div class="info-shopper">
+                            <p>Shopper Information</p>
+                            <form>
+                                <input type="text" placeholder="Display Name">
+                                <input type="text" placeholder="User Name">
+                                <input type="password" placeholder="Password">
+                                <input type="password" placeholder="Confirm Password">
+                            </form>
+                            <a href="#" class="btn">Get Quotes</a>
+                            <a href="#" class="btn">Continue</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-5">
+                        <div class="bill-to">
+                            <p>Bill To</p>
+                            <div class="form-one">
+                                <form >
+                                    <input type="text" placeholder="Company Name">
+                                    <input type="text" placeholder="Email*">
+                                    <input type="text" placeholder="Title">
+                                    <input type="text" placeholder="First Name *">
+                                    <input type="text" placeholder="Middle Name">
+                                    <input type="text" placeholder="Last Name *">
+                                    <input type="text" placeholder="Address 1 *">
+                                    <input type="text" placeholder="Address 2">
+                                </form>
+                            </div>
+                            <div class="form-two">
+                                <form >
+                                    <input type="text" placeholder="Zip / Postal Code *">
+                                    <select class="bg-white  border border-3 ">
+                                        <option>-- Country --</option>
+                                        <option>UK</option>
+                                        <option>India</option>
+                                        <option>Pakistan</option>
+                                        <option>Canada</option>
+                                        <option>Dubai</option>
+                                    </select>
+                                    <select class="bg-white border border-3">
+                                        <option>-- State / Province / Region --</option>
+                                        <option>UK</option>
+                                        <option>India</option>
+                                        <option>Pakistan</option>
+                                        <option>Canada</option>
+                                        <option>Dubai</option>
+                                    </select>
+                                    <input type="password"  placeholder="Confirm password">
+                                    <input type="text"  placeholder="Phone *">
+                                    <input type="text"  placeholder="Fax">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="order-message">
+                            <p>Shipping Order</p>
+                            <textarea name="message" placeholder="Notes about your order, Special Notes for Delivery"  rows="16"></textarea>
+                            <label >
+                                <input type="checkbox">
+                                Shipping to bill address
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="review-payment">
+                <h2>Review & Payment</h2>
             </div>
             <div class="cart-info responsive-1" >
                 <table class="table ">
@@ -316,82 +409,24 @@
                     </tbody>
                 </table>
             </div>
+           <div class="payment-options">
+            <span>
+                <label>
+                    <input type="checkbox" >
+                    Direct Bank Transfer
+                </label>
+                <label>
+                    <input type="checkbox" >
+                    Check Payment
+                </label>
+                <label>
+                    <input type="checkbox" >
+                    Paypal
+                </label>
+            </span>
+           </div>
         </div>
     </section>
-
-    <section class="cart-seller">
-        <div class="container-lg px-5">
-            <div class="heading">
-                <h3>What would you like to do next?</h3>
-                <p>Choose if you have a discount code or reward points you want to use or would like to estimate your delivery cost.
-                </p>
-            </div>
-            <div class="row">
-                <div class="col-sm-6">
-                    <div class="chose">
-                        <ul class="option">
-                            <li>
-                                <input type="checkbox">
-                                <label>Use Coupon Code</label>
-                            </li>
-                            <li>
-                                <input type="checkbox">
-                                <label> Use Gift Voucher
-                                </label>
-                            </li>
-                            <li>
-                                <input type="checkbox">
-                                <label> Estimate Shipping & Taxes
-                                </label>
-                            </li>
-                        </ul>
-                        <ul class="user-info">
-                            <li class="single-field">
-                                <label >Country:</label>
-                                <select >
-                                    <option >Turkey</option>
-                                    <option >Germany</option>
-                                    <option >USA</option>
-                                    <option >UK</option>
-                                </select>
-                            </li>  
-                            <li class="single-field">
-                                <label >Region / State:</label>
-                                <select >
-                                    <option >Select</option>
-                                    <option >London</option>
-                                    <option >Los Angeles</option>
-                                    <option >Canada</option>
-                                </select>
-                            </li>                                  
-                            <li class="single-field">
-                                <label >Zip Code:</label>
-                                <input type="text">
-                            </li> 
-
-                        </ul>
-                        <a href="#" class="btn update">Get Quotes</a>
-                        <a href="#" class="btn check-out">Continue</a>
-                    </div>
-                </div>
-                <div class="col-sm-6">
-                    <div class="total-area">
-                        <ul>
-                            <li>Cart Sub Total <span>$59</span></li>
-                            <li>Eco Tax <span>$2</span></li>
-                            <li>Shipping Cost<span>Free</span></li>
-                            <li>Total <span>$61</span></li>
-                        </ul>
-                        <a href="#" class="btn update">Update</a>
-                        <a href="#" class="btn check-out">Check Out</a>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-    </section>
-    <!--! cart items end -->
     <!--! footer start -->
     <footer>
       <div class="footer-top">
@@ -558,8 +593,9 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
-    <a href="#top" class="scrollUp position-fixed  d-block">
-      <i class="bi bi-arrow-90deg-up"></i>
-    </a>
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script src="js/glide.js"></script>
+
+ 
   </body>
 </html>
