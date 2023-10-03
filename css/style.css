@@ -1059,3 +1059,93 @@ textarea {
   margin-right: 30px;
 }
 /*! checkout end */
+/*! contact start */
+h2.title {
+  color: #fe980f;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0 15px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  position: relative;
+}
+h2.title:before {
+  content: " ";
+  position: absolute;
+  background: #fff;
+  bottom: -6px;
+  width: 220px;
+  height: 30px;
+  z-index: -1;
+  left: 50%;
+  margin-left: -110px;
+}
+.left-sidebar h2:after,
+h2.title:after {
+  content: " ";
+  position: absolute;
+  border: 1px solid #f5f5f5;
+  bottom: 8px;
+  left: 0;
+  width: 100%;
+  height: 0;
+  z-index: -2;
+}
+.contact-form .form-group {
+  margin-bottom: 20px;
+}
+.form-control {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  color: #696763;
+  height: 46px;
+  padding: 6px 12px;
+  width: 100%;
+  font-size: 16px;
+  border-radius: 4px;
+}
+#message {
+  height: 160px !important;
+}
+.contact-form .btn {
+  margin-bottom: 15px;
+  margin-top: 20px;
+}
+.btn.btn-primary {
+  background: #fe980f;
+  border: 0;
+  border-radius: 0;
+  margin-top: 16px;
+  float: right !important;
+}
+.contact-info address {
+  margin-bottom: 40px;
+  margin-top: -5px;
+}
+.contact-info p {
+  margin-bottom: 0;
+  color: #696763;
+  font-size: 16px;
+  line-height: 25px;
+}
+.social-networks {
+  overflow: hidden;
+  text-align: center;
+}
+.social-networks ul {
+  margin-top: -5px;
+  padding: 0;
+  display: inline-block;
+}
+.social-networks ul li {
+  float: left;
+  margin-right: 20px;
+}
+.social-networks ul li a {
+  color: #999;
+  font-size: 25px;
+}
+.social-networks ul li a:hover {
+  color: #fe980f;
+}
+/*! contact end */
