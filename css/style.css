@@ -344,26 +344,27 @@ ul {
 }
 
 .categories ul {
-  background: #40403e;
-  border-bottom: 1px solid #fe980f;
-  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
 }
 
-.categories ul li a {
-  color: #b3afa8;
+.categories ul li button {
+  color: #40403e;
   display: block;
+  border: 0;
   font-size: 14px;
   text-transform: uppercase;
   padding: 20px;
 }
 
-.categories ul li a:hover {
+.categories ul li button:hover {
   background: #fe980f;
   color: #fff;
 }
 
-.categories li.active a {
+.categories li.active button {
   background-color: #fe980f;
   color: #ffffff;
 }
