@@ -145,14 +145,16 @@
                   <i class="bi bi-crosshair2 mx-1"></i></i>Checkout</a
                 >
               </li>
-              <li class="nav-item ">
+              <li class="nav-item position-relative">
                 <a href="cart.html" class="nav-link">
-                  <i class="bi bi-cart-fill mx-1"></i></i>Cart</a
+                  <i class="bi bi-cart-fill mx-1"></i></i>Cart
+                  <span class="span header-cart">0</span>
+                  </a
                 >
               </li>
               <li class="nav-item ">
-                <a href="login.html" class="nav-link">
-                  <i class="bi bi-lock-fill mx-1"></i></i>Login</a
+                <a href="login.html" class="nav-link mx-3">
+                  <i class="bi bi-lock-fill"></i></i>Login</a
                 >
               </li>
             </ul>
@@ -492,11 +494,10 @@
           <div class="col-sm-9 position-relative">
             <div class="features">
               <h2 class="text-center">FEATURES ITEMS</h2>
-              <div class="row">
-
-                <div class="col-sm-4">
+              <div class="row" id="product-list">
+                <!-- <div class="col-sm-4">
                   <div class="product-img-wrapper position-relative">
-                    <div class="product-single text-center">
+                    <div class="product-single2 text-center">
                       <img src="images/home/product1.jpg" width="100%" alt="">
                       <span>$56</span>
                       <p>Easy Polo Black Edition</p>
@@ -509,8 +510,8 @@
                       </ul>
                     </div>
                   </div>
-                </div>
-                <div class="col-sm-4">
+                </div> -->
+                <!-- <div class="col-sm-4">
                   <div class="product-img-wrapper position-relative">
                     <div class="product-single text-center">
                       <img src="images/home/product2.jpg" width="100%" alt="">
@@ -589,7 +590,7 @@
                       </ul>
                     </div>
                   </div>
-                </div>
+                </div> -->
               </div>
             </div>
             <!--! category start -->
@@ -866,6 +867,8 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script src="js/app.js"></script>
+    <script src="js/products.js"></script>
     <script src="js/glide.js"></script>
     <script src="js/basic.js"></script>
 

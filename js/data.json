@@ -1,0 +1,109 @@
+[
+    {
+        "id": 1,
+        "name": "Ceket",
+        "price": {
+            "oldPrice": 165.00,
+            "newPrice": 108.00
+        },
+        "img": {
+            "singleImage": "images/home/product1.jpg"
+       
+        }
+    },
+    {
+        "id": 2,
+        "name": "Gözlük",
+        "price": {
+            "oldPrice": 250.00,
+            "newPrice": 208.00
+        },
+        "img": {
+            "singleImage": "images/home/product2.jpg"
+
+        }
+    },
+    {
+        "id": 3,
+        "name": "Siyah Elbise",
+        "price": {
+            "oldPrice": 90.00,
+            "newPrice": 38.00
+        },
+        "img": {
+            "singleImage": "images/home/product3.jpg"
+        }
+    },
+    {
+        "id": 4,
+        "name": "Düğmeli Elbise",
+        "price": {
+            "oldPrice": 95.00,
+            "newPrice": 80.00
+        },
+        "img": {
+            "singleImage": "images/home/product4.jpg"
+
+        }
+    },
+    {
+        "id": 5,
+        "name": "Mavi Kazak",
+        "price": {
+            "oldPrice": 165.00,
+            "newPrice": 99.00
+        },
+        "img": {
+            "singleImage": "images/home/product5.jpg"
+
+        }
+    },
+    {
+        "id": 6,
+        "name": "Beyaz T-shirt",
+        "price": {
+            "oldPrice": 90.00,
+            "newPrice": 48.00
+        },
+        "img": {
+            "singleImage": "images/home/product6.jpg"
+
+        }
+    },
+    {
+        "id": 7,
+        "name": "Ceket",
+        "price": {
+            "oldPrice": 165.00,
+            "newPrice": 119.90
+        },
+        "img": {
+            "singleImage": "images/home/product1.jpg"
+
+        }
+    },
+    {
+        "id": 8,
+        "name": "Siyah Elbise ",
+        "price": {
+            "oldPrice": 165.00,
+            "newPrice": 140.00
+        },
+        "img": {
+            "singleImage": "images/home/product3.jpg"
+
+        }
+    },
+    {
+        "id": 9,
+        "name": "Gözlük",
+        "price": {
+            "oldPrice": 50.00,
+            "newPrice": 48.00
+        },
+        "img": {
+            "singleImage": "images/home/product2.jpg"
+
+        }
+    }
+]

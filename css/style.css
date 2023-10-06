@@ -95,6 +95,19 @@ ul {
 .header-center ul li a:hover {
   color: #fe980f;
 }
+.header-center .nav-item .nav-link span {
+  position: absolute;
+  background: #f9c56a;
+  float: left;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 17px;
+  border-radius: 50%;
+  color: #fff !important;
+  margin-right: 5px;
+  right: -25px;
+}
 .header-bottom form input:focus {
   border-color: #f0f0e9;
 }
@@ -263,12 +276,14 @@ ul {
   overflow: hidden;
   margin-bottom: 30px;
 }
-.product-single span {
+.product-single span,
+.product-single2 span {
   color: #fe980f;
   font-size: 24px;
   font-weight: 700;
 }
-.product-single p {
+.product-single p,
+.product-single2 p {
   font-size: 14px;
   font-weight: 400;
   color: #696763;
