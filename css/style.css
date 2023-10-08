@@ -297,6 +297,9 @@ ul {
   font-size: 15px;
   margin-bottom: 25px;
 }
+.product-single2 button:disabled {
+  opacity: 0.4 !important;
+}
 .product-single a:hover,
 .product-choose a:hover {
   background: none;

@@ -6,3 +6,9 @@ async function getData() {
 }
 
 getData()
+
+const cartItems = document.querySelector(".header-cart")
+
+cartItems.innerHTML = localStorage.getItem("cart") ? JSON.parse(localStorage.getItem("cart")).length : "0"
+
+//! eğer localstoragenin içerisinde kaç tane kart var ise sayfa yenilendiğinde onu göster yok ise 0 göster.
