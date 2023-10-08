@@ -3,6 +3,7 @@ async function getData() {
     const data = await photos.json()
 
     data ? localStorage.setItem("products", JSON.stringify(data)) : [] // eğer datanın içerisinde veri var ise göster yok ise boş bir array döndür
+    productsFunc() //! bunu burda cagırdık çünkü sayfa yenilendiğinde direk gelmiyor 2.kez yenilenmesi gerekiyordu.
 }
 
 getData()

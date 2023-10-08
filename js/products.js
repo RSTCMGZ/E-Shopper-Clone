@@ -64,4 +64,4 @@ function productsFunc() {
   })
 
 }
-productsFunc()
+productsFunc //! bunu burda cagırdık çünkü sayfa yenilendiğinde direk gelmiyor 2.kez yenilenmesi gerekiyordu.
