@@ -1,12 +1,16 @@
+// localstorage'ye product'tan ürün yüklemek
 async function getData() {
     const photos = await fetch("../js/data.json")
     const data = await photos.json()
 
     data ? localStorage.setItem("products", JSON.stringify(data)) : [] // eğer datanın içerisinde veri var ise göster yok ise boş bir array döndür
-    productsFunc() //! bunu burda cagırdık çünkü sayfa yenilendiğinde direk gelmiyor 2.kez yenilenmesi gerekiyordu.
+    productsFunc()
 }
 
 getData()
+
+
+// localstorage'ye cartItems'ten ürün yüklemek
 
 const cartItems = document.querySelector(".header-cart")
 

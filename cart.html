@@ -230,92 +230,11 @@
                             <td class="orange"></td>
                         </tr>
                     </thead>
-                    <tbody>
-                        <tr>
-                            <td class="cart-product">
-                                <a href="#"><img src="images/cart/one.png"  alt=""></a>
-                            </td>
-                            <td class="cart-desc">
-                                <h4><a href="#">ColorBlock Scuba</a></h4>
-                                <p>Web ID: 1089772</p>
-                            </td>
-                            <td class="cart-price">
-                                <p>$59</p>
-                            </td>
-                            <td class="cart-quantity">
-                                <div class="cart-quantity-btn">
-                                    <a href="#" class="cart-quantity-up
-                                    ">+</a>
-                                    <input type="text" class="cart-quantity_input" value="1" autocomplete="off" size="2">
-                                    <a href="#" class="cart-quantity_down">-</a>
-                                </div>
-                            </td>
-                            <td class="cart-total">
-                                <div class="cart_total_price">$59</div>
-                            </td>
-                            <td class="cart-delete">
-                                <a href="#" class="cart_quantity_delete">
-                                    <i class="bi bi-x-lg"></i>
-                                </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="cart-product">
-                                <a href="#"><img src="images/cart/one.png"  alt=""></a>
-                            </td>
-                            <td class="cart-desc">
-                                <h4><a href="#">ColorBlock Scuba</a></h4>
-                                <p>Web ID: 1089772</p>
-                            </td>
-                            <td class="cart-price">
-                                <p>$59</p>
-                            </td>
-                            <td class="cart-quantity">
-                                <div class="cart-quantity-btn">
-                                    <a href="#" class="cart-quantity-up
-                                    ">+</a>
-                                    <input type="text" class="cart-quantity_input" value="1" autocomplete="off" size="2">
-                                    <a href="#" class="cart-quantity_down">-</a>
-                                </div>
-                            </td>
-                            <td class="cart-total">
-                                <div class="cart_total_price">$59</div>
-                            </td>
-                            <td class="cart-delete">
-                                <a href="#" class="cart_quantity_delete">
-                                    <i class="bi bi-x-lg"></i>
-                                </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="cart-product">
-                                <a href="#"><img src="images/cart/one.png"  alt=""></a>
-                            </td>
-                            <td class="cart-desc">
-                                <h4><a href="#">ColorBlock Scuba</a></h4>
-                                <p>Web ID: 1089772</p>
-                            </td>
-                            <td class="cart-price">
-                                <p>$59</p>
-                            </td>
-                            <td class="cart-quantity">
-                                <div class="cart-quantity-btn">
-                                    <a href="#" class="cart-quantity-up
-                                    ">+</a>
-                                    <input type="text" class="cart-quantity_input" value="1" autocomplete="off" size="2">
-                                    <a href="#" class="cart-quantity_down">-</a>
-                                </div>
-                            </td>
-                            <td class="cart-total">
-                                <div class="cart_total_price">$59</div>
-                            </td>
-                            <td class="cart-delete">
-                                <a href="#" class="cart_quantity_delete">
-                                    <i class="bi bi-x-lg"></i>
-                                </a>
-                            </td>
-                        </tr>
+                    <tbody class="cart-wrapper">
+               
+            
                     </tbody>
+
                 </table>
             </div>
         </div>
@@ -379,10 +298,17 @@
                 <div class="col-sm-6">
                     <div class="total-area">
                         <ul>
-                            <li>Cart Sub Total <span>$59</span></li>
-                            <li>Eco Tax <span>$2</span></li>
-                            <li>Shipping Cost<span>Free</span></li>
-                            <li>Total <span>$61</span></li>
+                            <li>Cart Sub Total <span id="sub-total">$59.00</span></li>
+                            <li>
+                              <label class="d-flex align-content-center justify-content-between" >
+                                Fast Cargo: 
+                                <div>$15.00
+                                <input type="checkbox" id="fast-cargo" >
+                              </div>
+                              </label>
+                            </li>
+                            
+                            <li>Total <span  id="cart-total">$61</span></li>
                         </ul>
                         <a href="#" class="btn update">Update</a>
                         <a href="#" class="btn check-out">Check Out</a>
@@ -560,6 +486,9 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+    <script src="js/app.js"></script>
+    <script src="js/products.js"></script>
+    <script src="js/cart.js"></script>
     <a href="#top" class="scrollUp position-fixed  d-block">
       <i class="bi bi-arrow-90deg-up"></i>
     </a>

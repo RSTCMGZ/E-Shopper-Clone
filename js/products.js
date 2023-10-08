@@ -1,7 +1,6 @@
-let products = []// productsları cagırdık
-let cart = [] // cartları cagırdık
+let products = localStorage.getItem("products") ? JSON.parse(localStorage.getItem("products")) : []  // eğer datanın içerisinde veri var ise göster yok ise boş bir array döndür
+let cart = localStorage.getItem("cart") ? JSON.parse(localStorage.getItem("cart")) : [] //eğer localstoragenin içinde "cart" "?" var ise yazdır yok ise ":" boş bir array [] döndür.
 
-cart = localStorage.getItem("cart") ? JSON.parse(localStorage.getItem("cart")) : [] //eğer localstoragenin içinde "cart" ? var ise yazdır yok ise boş bir array [] döndür.
 
 function addToCart() {
   const cartItems = document.querySelector(".header-cart")
@@ -36,7 +35,6 @@ function addToCart() {
 
 
 function productsFunc() {
-  products = localStorage.getItem("products") ? JSON.parse(localStorage.getItem("products")) : []  // eğer datanın içerisinde veri var ise göster yok ise boş bir array döndür
   const productsContainer = document.querySelector("#product-list")
   let results = "" //boş bir değişken oluşturup onu for eachin içinde +1 artırarak cartları dizdik.
   products.forEach((item) => { // data jsondan veri çektik.foreach ile  döndürdük.
@@ -50,6 +48,7 @@ function productsFunc() {
           <p>${item.name}</p>
           <button  class="btn add-to-cart"  data-id="${item.id}"><i class="bi bi-cart mx-2"></i>Add to cart</button>
         </div>
+        
             <div class="product-choose ">
           <ul class="d-flex gap-1 mb-0  px-0 align-items-center justify-content-center  ">
             <li><a href="#"><i class="bi bi-plus-square"></i>Add to wishlist</a></li>
@@ -60,6 +59,7 @@ function productsFunc() {
       </div>
           `;
     productsContainer ? productsContainer.innerHTML = results : "";
+    //! (?)içerisinde var ise productscontainer.innerHTML'i göster,yok ise : "" göster  
     addToCart();
   })
 
