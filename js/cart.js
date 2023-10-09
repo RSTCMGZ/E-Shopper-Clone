@@ -21,7 +21,7 @@ function displayCartProduct() {
         </td>
         <td class="cart-quantity">
             <div class="cart-quantity-btn">
-                <input type="number" value="1" min="1" data-id="${item.quantity} class="quantity1">
+            <span>1</span
             </div>
         </td>
         <td class="cart-total">
@@ -64,11 +64,12 @@ function saveCartValues() {
     const cartTotal = document.getElementById("cart-total")
     const subTotal = document.getElementById("sub-total")
     const fastCargo = document.getElementById("fast-cargo")
+
     let itemsTotal = 0; //ilk olarak değerleri sıfır olarak kabul ettik
 
     const fastCargoPrice = 15; //hızlı kargo ödemesi
     cart.length > 0 &&
-        cart.map((item) => itemsTotal += item.price.oldPrice * quantityValue) //map ile item(her bir elemanı döndürdük) ve cartın uzunluğu büyük ise 0 dan fiyat çarpı itemin adeti itemstotal'e eşitledik.
+        cart.map((item) => itemsTotal += item.price.oldPrice * item.quantity) //map ile item(her bir elemanı döndürdük) ve cartın uzunluğu büyük ise 0 dan fiyat çarpı itemin adeti itemstotal'e eşitledik.
     subTotal.innerHTML = `${itemsTotal.toFixed(2)}` //toplamını yazdırdık
     cartTotal.innerHTML = `${itemsTotal.toFixed(2)}`//Toplamını yazdırdık
     fastCargo.addEventListener("change", (e) => {
